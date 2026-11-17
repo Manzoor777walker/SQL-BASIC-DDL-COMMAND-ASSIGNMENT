@@ -1,6 +1,8 @@
 # SQL-BASIC-COMMAND-ASSIGNMENT
 Data Definition Language (DDL) commands provide the essential framework for building, maintaining, and managing database architectures. By effectively utilizing creation, alteration, and constraint rules, developers ensure long-term data integrity, security, and structural adaptability.
 # DDL Commands & Constraints
+   
+   
    Table Creation (CREATE): ⦿ create a database named “employee” 
                             ⦿create tables Departments, Location , Employees
    Table Alteration (ALTER): Alter the structure of the tables accordingly:
