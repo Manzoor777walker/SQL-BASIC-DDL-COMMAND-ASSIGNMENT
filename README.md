@@ -45,19 +45,19 @@ unique not null);
                
                           QUERY:  create table Location(location_id int auto_increment primary key ,location varchar(30) not null unique);
 ## Employees Table: 
-	⦿Guarantee that each employee has a distinct identifier.
+### ⦿Guarantee that each employee has a distinct identifier.
                       [Distinct identifier: employee_id INT AUTO_INCREMENT PRIMARY KEY (guarantees uniqueness and auto-increments).]
             
                                
-   ⦿Create a restriction to ensure that the employee's name is always provided. 
+   ### ⦿Create a restriction to ensure that the employee's name is always provided. 
                     [Employee name always provided: employee_name VARCHAR(50) NOT NULL (prevents null/missing names)].
-   ⦿Limit the acceptable values for the "gender" field to only 'M' or 'F'. 
+   ### ⦿Limit the acceptable values for the "gender" field to only 'M' or 'F'. 
                     Gender limited to 'M' or 'F': gender ENUM('M', 'F') (restricts values)
-   ⦿Enforce a condition to ensure that the employee's age is 18 or above.  
+   ### ⦿Enforce a condition to ensure that the employee's age is 18 or above.  
                     Age 18 or above: CHECK (age >= 18) (enforces the minimum age restriction).
-   ⦿Automatically assign the current date to the "hire_date" field if not specified.
+   ### ⦿Automatically assign the current date to the "hire_date" field if not specified.
                     Auto-assign current date to hire date: hire_date DATE DEFAULT (CURRENT_DATE) (automatically populates today's date if omitted).
-   ⦿Establish links between the "department_id" and "location_id" fields in the "employees" table and their respective tables.
+   ### ⦿Establish links between the "department_id" and "location_id" fields in the "employees" table and their respective tables.
                     Foreign key links: FOREIGN KEY constraints linking department_id and location_id to their respective tables
 
 
